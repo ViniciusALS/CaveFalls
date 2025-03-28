@@ -2,11 +2,11 @@
 
 > Este projeto se refere ao trabalho A4 da disciplina de **Programação de Jogos** da **Universidade Veiga de Almeida**, ministrada pelo professor **Denis Cople**.
 >
-> Para este trabalho, desenvolvemos um jogo 2D através da plataforma Unity e utilizando a linguagem de programação C#.
+> Para este trabalho, desenvolvemos um jogo 2D através da plataforma Unity e utilizamos a linguagem de programação C#.
 
-## 🔧 Requisítos Técnicos
+## 🔧 Requisitos Técnicos
 
-Certifiquesse de que você possui os seguintes programas instalados para poder usar e contribuir para o projeto:
+Certifique-se de que você possui os seguintes programas instalados para poder usar e contribuir para o projeto:
 
 * [Git](https://git-scm.com/downloads) (Usado no versionamento do projeto)
 * [VSCode](https://code.visualstudio.com/) (Editor de texto usado para desenvolvimento)
@@ -29,7 +29,7 @@ Primeira vez no repositório? Siga os passos abaixo:
 
 ### Primeira Vez Usando Git
 
-Se essa for a sua primeira vez usando o git, você tera de fazer algumas configurações.
+Se essa for a sua primeira vez usando o git, você terá de fazer algumas configurações.
 
 1. Abra o terminal
 2. Execute os seguintes comandos:
@@ -44,7 +44,7 @@ Se essa for a sua primeira vez usando o git, você tera de fazer algumas configu
 
 ### Como Baixar Atualizações
 
-Sempre que quiser puxar as modificações do código na núvem de outros colaboradores:
+Sempre que quiser puxar as modificações do código na nuvem de outros colaboradores:
 
 1. Abra o terminal e certifique-se de que está no diretório do projeto.
 2. Execute o comando:
@@ -55,7 +55,7 @@ Sempre que quiser puxar as modificações do código na núvem de outros colabor
 
 ### Como Enviar Atualizações
 
-Sempre que quiser enviar suas modificações no código para a núvem.
+Sempre que quiser enviar suas modificações no código para a nuvem.
 
 1. Garanta que nenhum outro membro fez outra modificação no mesmo arquivo:
 
