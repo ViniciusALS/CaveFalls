@@ -38,7 +38,7 @@ Se essa for a sua primeira vez usando o git, você tera de fazer algumas configu
     git config --global user.email "meu_email@email.com"
     ```
 
-### Como Puxar Atualizações
+### Como Baixar Atualizações
 
 Sempre que quiser puxar as modificações do código na núvem de outros colaboradores:
 
