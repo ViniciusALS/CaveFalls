@@ -130,6 +130,9 @@ GameObject:
   - component: {fileID: 278722079}
   - component: {fileID: 278722081}
   - component: {fileID: 278722080}
+  - component: {fileID: 278722084}
+  - component: {fileID: 278722083}
+  - component: {fileID: 278722082}
   m_Layer: 0
   m_Name: PlataformasIniciais
   m_TagString: Untagged
@@ -368,6 +371,242 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!66 &278722082
+CompositeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 278722078}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_GeometryType: 0
+  m_GenerationType: 0
+  m_EdgeRadius: 0
+  m_ColliderPaths:
+  - m_Collider: {fileID: 278722084}
+    m_ColliderPaths:
+    - - X: 42666668
+        Y: 27333334
+      - X: 42666668
+        Y: 25333334
+      - X: 52000004
+        Y: 25333334
+      - X: 53333336
+        Y: 26000002
+      - X: 53333336
+        Y: 32000000
+      - X: 32000002
+        Y: 32000000
+      - X: 32000002
+        Y: 27333334
+      - X: 34000004
+        Y: 25333334
+      - X: 38666672
+        Y: 25333334
+    - - X: -53333340
+        Y: 26666668
+      - X: -53333340
+        Y: 32000000
+      - X: -64000004
+        Y: 32000000
+      - X: -64000004
+        Y: 26000002
+      - X: -63333340
+        Y: 25333334
+      - X: -56000004
+        Y: 25333334
+    - - X: 32000000
+        Y: 4666666
+      - X: 32000000
+        Y: 10666666
+      - X: -21333334
+        Y: 10666666
+      - X: -21333334
+        Y: 5333333
+      - X: -17333334
+        Y: 4666666
+      - X: -14000001
+        Y: 4666666
+      - X: -10666668
+        Y: 6666666
+      - X: -10666668
+        Y: 5333333
+      - X: -6666667
+        Y: 4666666
+      - X: -3333334
+        Y: 4666666
+      - X: 0
+        Y: 6666666
+      - X: 0
+        Y: 5333333
+      - X: 3999999
+        Y: 4666666
+      - X: 7333333
+        Y: 4666666
+      - X: 10666666
+        Y: 6666666
+      - X: 10666666
+        Y: 5333333
+      - X: 14666667
+        Y: 4666666
+      - X: 18000000
+        Y: 4666666
+      - X: 21333334
+        Y: 6666666
+      - X: 21333334
+        Y: 3999999
+      - X: 30666668
+        Y: 3999999
+    - - X: -21333336
+        Y: 5999999
+      - X: -21333336
+        Y: 10666666
+      - X: -32000002
+        Y: 10666666
+      - X: -32000002
+        Y: 5999999
+      - X: -30000002
+        Y: 3999999
+      - X: -25333336
+        Y: 3999999
+  m_CompositePaths:
+    m_Paths:
+    - - {x: 3.8666613, y: 2.5333335}
+      - {x: 4.266667, y: 2.7332804}
+      - {x: 4.266696, y: 2.5333335}
+      - {x: 5.200006, y: 2.533336}
+      - {x: 5.3333335, y: 2.6000168}
+      - {x: 5.3333044, y: 3.2}
+      - {x: 3.2000003, y: 3.1999707}
+      - {x: 3.200008, y: 2.7333257}
+      - {x: 3.4000113, y: 2.5333335}
+    - - {x: -5.6000066, y: 2.5333335}
+      - {x: -5.333334, y: 2.6666834}
+      - {x: -5.333363, y: 3.2}
+      - {x: -6.4000006, y: 3.1999707}
+      - {x: -6.399993, y: 2.5999925}
+      - {x: -6.3333235, y: 2.5333335}
+    - - {x: -2.5333397, y: 0.39999992}
+      - {x: -2.1333334, y: 0.59994704}
+      - {x: -2.1333096, y: 0.5333293}
+      - {x: -1.733332, y: 0.4666666}
+      - {x: -1.3999939, y: 0.46667022}
+      - {x: -1.0666668, y: 0.6666075}
+      - {x: -1.0666431, y: 0.5333293}
+      - {x: -0.6666652, y: 0.4666666}
+      - {x: -0.3333272, y: 0.46667022}
+      - {x: 0, y: 0.6666075}
+      - {x: 0.0000237, y: 0.5333293}
+      - {x: 0.4000014, y: 0.4666666}
+      - {x: 0.7333395, y: 0.46667022}
+      - {x: 1.0666666, y: 0.6666075}
+      - {x: 1.0666903, y: 0.5333293}
+      - {x: 1.4666682, y: 0.4666666}
+      - {x: 1.8000063, y: 0.46667022}
+      - {x: 2.1333334, y: 0.6666075}
+      - {x: 2.1333628, y: 0.39999992}
+      - {x: 3.0666723, y: 0.4000026}
+      - {x: 3.2, y: 0.4666832}
+      - {x: 3.1999707, y: 1.0666666}
+      - {x: -3.2000003, y: 1.0666373}
+      - {x: -3.1999927, y: 0.59999233}
+      - {x: -2.9999895, y: 0.39999992}
+  m_VertexDistance: 0.0005
+  m_OffsetDistance: 0.00005
+  m_UseDelaunayMesh: 0
+  m_CompositeGameObject: {fileID: 278722078}
+--- !u!50 &278722083
+Rigidbody2D:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 278722078}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!19719996 &278722084
+TilemapCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 278722078}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 1
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_MaximumTileChangeCount: 1000
+  m_ExtrusionFactor: 0
+  m_UseDelaunayMesh: 0
 --- !u!1 &382024505
 GameObject:
   m_ObjectHideFlags: 0
@@ -680,7 +919,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 382024505}
-  m_BodyType: 0
+  m_BodyType: 2
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -2606,7 +2845,7 @@ GameObject:
   - component: {fileID: 1373481164}
   - component: {fileID: 1373481163}
   m_Layer: 0
-  m_Name: Player
+  m_Name: Jogador
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2638,7 +2877,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!61 &1373481160
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2767,6 +3006,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5e87164da9264ea586e7426d4e45517, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  velocidadeJogador: 5
+  potenciaPulo: 5
+  potenciaPuloBaixo: 2.5
 --- !u!114 &1373481164
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2793,11 +3035,35 @@ MonoBehaviour:
       m_Calls: []
   m_ActionEvents:
   - m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1373481163}
+        m_TargetAssemblyTypeName: MovimentoPlayer, Assembly-CSharp
+        m_MethodName: MovimentoAWSD
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_ActionId: 351f2ccd-1f9f-44bf-9bec-d62ac5c5f408
     m_ActionName: 'Player/Move[/Keyboard/w,/Keyboard/upArrow,/Keyboard/s,/Keyboard/downArrow,/Keyboard/a,/Keyboard/leftArrow,/Keyboard/d,/Keyboard/rightArrow]'
   - m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1373481163}
+        m_TargetAssemblyTypeName: MovimentoPlayer, Assembly-CSharp
+        m_MethodName: Pulo
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_ActionId: f1ba0d36-48eb-4cd5-b651-1c94a6531f70
     m_ActionName: 'Player/Jump[/Keyboard/space]'
   - m_PersistentCalls:
@@ -2856,7 +3122,7 @@ GameObject:
   - component: {fileID: 1810357224}
   - component: {fileID: 1810357223}
   m_Layer: 0
-  m_Name: Grid
+  m_Name: Tela
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2898,5 +3164,5 @@ SceneRoots:
   m_Roots:
   - {fileID: 519420032}
   - {fileID: 619394802}
-  - {fileID: 1810357224}
   - {fileID: 1373481162}
+  - {fileID: 1810357224}
