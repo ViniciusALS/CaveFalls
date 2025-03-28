@@ -7,23 +7,25 @@ public class MovimentoPlayer : MonoBehaviour
 
     float movimentoHorizontal;
 
-    [Header("Movimentos")]
+    [Header("Dinamica")]
     public float velocidadeJogador = 5f;
+    
+    [Header("Pulo")]
     public float potenciaPulo = 5f;
+    public float potenciaPuloBaixo = 2.5f;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+
     void Start()
     {
         rb2d = GetComponent<Rigidbody2D>();
     }
 
-    // Update is called once per frame
+
     void Update()
     {
-        rb2d.linearVelocity = 
-                new Vector2(
-                    movimentoHorizontal * velocidadeJogador, 
-                    rb2d.linearVelocityY);
+        rb2d.linearVelocity = new Vector2(
+                movimentoHorizontal * velocidadeJogador, 
+                rb2d.linearVelocityY);
     }
 
     public void MovimentoAWSD(InputAction.CallbackContext ctx)
@@ -35,10 +37,15 @@ public class MovimentoPlayer : MonoBehaviour
     {
         if (ctx.performed)
         {
-            rb2d.linearVelocity = 
-                    new Vector2(
-                        rb2d.linearVelocityX, 
-                        potenciaPulo);
+            rb2d.linearVelocity = new Vector2(
+                    rb2d.linearVelocityX, 
+                    potenciaPulo);
+        }
+        else if (ctx.canceled)
+        {
+            rb2d.linearVelocity = new Vector2(
+                    rb2d.linearVelocityX, 
+                    potenciaPuloBaixo);
         }
     }
 }
