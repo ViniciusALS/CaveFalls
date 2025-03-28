@@ -1,4 +1,8 @@
-# Projeto A4 Jogos
+# Cave Falls
+
+> Este projeto se refere ao trabalho A4 da disciplina de Programação de Jogos da Universidade Veiga de Almeida, ministrada pelo professor Denis Cople.
+>
+> Para este trabalho, desenvolvemos um jogo 2D através da plataforma Unity e utilizando a linguagem de programação C#.
 
 ## 🔧 Requisítos Técnicos
 
