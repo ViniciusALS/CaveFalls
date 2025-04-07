@@ -14,6 +14,9 @@ public class MovimentoPlayer : MonoBehaviour
     public float potenciaPulo = 5f;
     public float potenciaPuloBaixo = 2.5f;
 
+    // [Header("Inspeciona Chão")]
+
+
 
     void Start()
     {
