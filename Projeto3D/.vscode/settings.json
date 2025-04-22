@@ -56,5 +56,6 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "Projeto3D.sln"
+    "dotnet.defaultSolution": "Projeto3D.sln",
+    "editor.codeLens": false
 }

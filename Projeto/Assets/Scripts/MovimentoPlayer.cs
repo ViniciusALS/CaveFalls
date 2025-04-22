@@ -4,6 +4,7 @@ using UnityEngine.InputSystem;
 public class MovimentoPlayer : MonoBehaviour
 {
     Rigidbody2D rb2d;
+    public Animator animator;
 
     float movimentoHorizontal;
 
@@ -29,6 +30,9 @@ public class MovimentoPlayer : MonoBehaviour
         rb2d.linearVelocity = new Vector2(
                 movimentoHorizontal * velocidadeJogador, 
                 rb2d.linearVelocityY);
+    
+        animator.SetFloat("xVelocity", rb2d.linearVelocityX);
+        animator.SetFloat("yVelocity", rb2d.linearVelocityY);
     }
 
     public void MovimentoAWSD(InputAction.CallbackContext ctx)
@@ -43,12 +47,14 @@ public class MovimentoPlayer : MonoBehaviour
             rb2d.linearVelocity = new Vector2(
                     rb2d.linearVelocityX, 
                     potenciaPulo);
+            animator.SetTrigger("estaPulando");
         }
         else if (ctx.canceled)
         {
             rb2d.linearVelocity = new Vector2(
                     rb2d.linearVelocityX, 
                     potenciaPuloBaixo);
+            animator.SetTrigger("estaPulando");
         }
     }
 }
