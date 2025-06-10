@@ -1,0 +1,182 @@
+\documentclass{UVA_ABNT}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%% Imports Packages %%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage{times}              % Sets font to Times New Roman
+
+\usepackage[utf8]{inputenc}     % Configures encoding to portuguese
+\usepackage[T1]{fontenc}        % Configures encoding to portuguese  
+\usepackage[portuguese]{babel}  % Configures encoding to portuguese
+\usepackage{csquotes}
+\usepackage{geometry}           % To adjust page layout
+\usepackage{fancyhdr}           % For custom headers and footers
+\usepackage[linktoc=all]{hyperref}           % For hyperlinks
+\usepackage{bookmark}
+\usepackage{tikz}               % For drawing diagrams 
+\usepackage{enumitem}           % For customizing lists
+\usepackage{graphicx}           % For including graphics 
+\usepackage{changepage}
+\usepackage{relsize}
+\usepackage{indentfirst}        % Indents first paragraph
+\usepackage{listings}           % For lists of things
+% \usepackage[newfloat]{minted}   % For formated blocks of code
+\usepackage{caption}
+\usepackage{lipsum}
+\usepackage[
+    style = abnt,               % Sistema alfabético
+    % style = abnt-numeric,     % Sistema numérico
+    % style = abnt-ibid,        % Notas de referência
+]{biblatex}                     % For ABNT bibliography generation
+\usepackage{tabularx}       % For multiple collumns 
+\usepackage[explicit]{titlesec}
+\usepackage{tocbasic}
+\usepackage{setspace}
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%% Configures Packages & Page %%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Configures biblatex
+\addbibresource{Referencias.bib}
+% \AtBeginBibliography{\renewcommand*{\mkbibnamefamily}[1]{\textsc{#1}}}
+
+
+% Sets lineheight
+\renewcommand{\baselinestretch}{1.5} 
+
+% Sets figure counter name
+\renewcommand{\figurename}{Imagem}
+
+% Creates color variable names
+\definecolor{bgGrey}{rgb}{0.95,0.95,0.95}
+
+% Configures table of contents name
+\addto\captionsportuguese{%
+  \renewcommand{\contentsname}%
+    {\hfill SUMÁRIO \hfill}%
+}
+
+\addto\captionsportuguese{
+    \renewcommand{\listfigurename}
+    {\hfill LISTA DE ILUSTRAÇÕES \hfill}
+}
+
+\addto\captionsportuguese{
+    \renewcommand{\listtablename}
+    {\hfill LISTA DE TABELAS \hfill}
+}
+
+\DeclareTOCStyleEntries[
+  linefill=\dotfill,
+  numwidth=35pt,
+%   numsep=1ex,
+  dynnumwidth,
+  indent=0pt
+]{tocline}{chapter, section, subsection, subsubsection}
+
+\DeclareTOCStyleEntries[
+    entryformat=\bfseries,
+    entrynumberformat=\bfseries,
+    pagenumberformat=\bfseries
+]{tocline}{section, subsubsection}
+
+
+% Configures minted
+% \setminted{
+% frame=lines,
+% framesep=2mm,
+% baselinestretch=1,
+% bgcolor=bgGrey,
+% fontsize=\footnotesize,
+% linenos
+% }
+
+% \newenvironment{longlisting}{\captionsetup{type=listing}}{}
+% \SetupFloatingEnvironment{listing}{name=Código}
+
+% Definindo as margens
+\geometry{top=3cm,bottom=2cm,left=3cm,right=2cm}
+
+% Sets page style to show page numbering on header
+\pagestyle{fancy}
+
+\fancyhead{}
+\setlength\headheight{26pt}
+\fancyhead[L]{\includegraphics[width=2cm]{Figuras/uva_header.png}}
+\fancyhead[R]{\thepage}
+\fancyfoot{}
+
+\fancypagestyle{pretext}{%
+    \fancyhf{}
+    \setlength\headheight{26pt}
+    \fancyhead[L]{\includegraphics[width=2cm]{Figuras/uva_header.png}}
+}
+
+%  Edit section formating
+\titleformat{\section}
+    {\normalfont\bfseries}{\thesection}{1em}{\uppercase{#1}}
+
+\titleformat{\subsection}
+    {\normalfont}{\thesubsection}{1em}{\MakeUppercase{#1}}
+
+\titleformat{\subsubsection}
+  {\normalfont\bfseries}{\thesubsubsection}{1em}{{#1}}
+
+
+  \captionsetup[figure]{font=small,labelfont=small}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%% Valores do Documento %%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\setTitle[Nome do Jogo]
+\setSubtitle[Game Design Document]
+
+\setCity[Rio de Janeiro]
+
+\setAuthors[Vinicius DE AZEVEDO LIMA E SOUZA \\ 1240201902]
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%% Document Body %%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document} 
+
+    %%%%%%%% Elementos Externos %%%%%%%%%%
+
+    \input{Tex/ParteExterna/Capa.tex} %% Página obrigatória
+    
+    %%%%%%%% Elementos Pré-Textuais
+    
+    \input{Tex/Pretexto/Listas.tex}
+    
+    \thispagestyle{pretext}
+    \tableofcontents
+    \newpage
+
+    %%%%%%%%% Elementos Textuais
+    
+    \input{Tex/Corpo/Introducao.tex}
+
+    \input{Tex/Corpo/Desenvolvimento.tex}
+
+    \input{Tex/Corpo/Conclusao.tex}
+
+    %%%%%%%% Elementos Pós-Textuais
+
+    \newpage
+    \nocite{*}
+    \phantomsection
+    \printbibliography[title={\hfill REFERÊNCIAS \hfill}]
+    \addcontentsline{toc}{section}{\string\numberline{}REFERÊNCIAS}
+\end{document}
